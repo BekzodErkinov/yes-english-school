@@ -1,0 +1,93 @@
+.site__footer {
+    margin-top: 180px;
+    padding: 77px 0;
+    background-color: #f8f8f8;
+
+    .part__logo {
+        display: flex;
+        justify-content: space-between;
+    
+        .social-networks {
+            display: flex;
+            margin-bottom: 20px;
+
+            .social-network {
+                margin: 0 10px;
+            }
+            .social-network-1 {
+                width: 40px;
+                height: 23px;
+            }
+            .social-network-2 {
+                width: 28px;
+                height: 28px;
+    
+            }
+            .social-network-3 {
+                width: 27px;
+                height: 31px;
+            }
+            .social-network-4 {
+                width: 19px;
+                height: 30px;
+            }            
+        }
+    }
+    .part__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        p {
+            margin: 0;
+        }
+        .footer__address-wrapper {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            
+            .address-st {
+                color: #141414;
+                font-style: normal;
+            }
+            .footer__tel {
+                color: #141414;
+                margin-left: 25px;
+                font-size: $text-size;
+            }
+            .footer__tel-button {
+                color: red;
+                padding: 10px;
+                margin-left: 20px;
+                border-radius: 30px;
+                font-size: $text-size;
+                border: 2px solid red;
+                transition: background-color 0.3s linear;
+            }
+            .footer__tel-button:hover {
+                color: #fff;
+                background-color: red;
+            }
+        }
+    }
+}
+
+// Media
+@media (max-width: 970px) {
+    .part__logo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .part__links{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 870px) {
+    .footer__address-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

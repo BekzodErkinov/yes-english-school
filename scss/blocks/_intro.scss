@@ -1,0 +1,87 @@
+.intro-section {
+    background-image: url(../img/english-yes.png), url(../img/o.png);
+    background-repeat: no-repeat;
+    background-position: 52% 13%, -1% 45%;
+
+    .intro-container {
+        display: flex;
+        align-items: flex-end;
+        background-image: url(../img/dot.png);
+        background-repeat: no-repeat;
+        background-position: 92% 18%;
+    }
+    .intro-container img {
+        position: absolute;
+        top: 8%;
+        z-index: -1;
+    }
+    .intro__text-wrapper {
+        width: 515px;
+        line-height: 1.2;
+        margin: 174px 0 0 auto;
+        background-image: url(../img/w.png);
+        background-repeat: no-repeat;
+        background-position: 90% 65%;
+    }
+    .intro__name {
+        position: relative;
+        margin-bottom: 80px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -22%;
+            width: 64px;
+            height: 7px;
+            background-color: #f00;
+        }
+    }
+    .intro__name span {
+        display: block;
+        font-size: 34px;
+    }
+    .intro__check-in-btn {
+        color: #fff;
+        margin: 80px 0;
+        padding: 25px 35px;
+        display: inline-block;
+        font-size: $text-size;
+        font-weight: 800;
+        border-radius: 50px;
+        box-shadow: 0 5px 10px 4px #fb93a2;
+        background-image: linear-gradient(to bottom, #fb7068, #f8434f);
+        transition: all 0.3s linear;
+        
+        &:hover {
+            box-shadow: 0 7px 12px 5px #f95a72;
+            background-image: linear-gradient(#f3374f);
+        }
+        &:active {
+            box-shadow: 0 7px 12px 5px #f8415ce3;
+            background-image: linear-gradient(#db0c27);
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: 0 7px 12px 5px #f95a72;
+            background-image: linear-gradient(#f3374f);
+        }
+    }
+}
+
+// Media
+@media (max-width: 1150px) {
+    .intro-section {
+        background-image: none;
+    }
+    .intro-container {
+        display: flex;
+        justify-content: center; // ishlamadi
+    }
+    .intro-container img {
+        display: none;
+    }
+    .intro__text-wrapper {
+        margin: 130px auto; // ishlamadi
+    }
+}
